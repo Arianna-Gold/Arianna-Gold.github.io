@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/contact.css">
+        <title>AMEYE SAFE</title>
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/735/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("THANK YOU FOR JOINING OUR TEAM")
+        },
+        error: function(){
+          alert("There was an error. Try submitting again. :)")
+        }
+    });
+}
+</script> 
+    </head>
+
+    <body> 
+        <div class="navbar">
+            
+            <div class="dropdown">
+              <button class="dropbtn">EXPLORE
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="LANDING.html">HOME</a>
+                <a href="OURMISSION.html">OUR MISSION</a>
+                <a href="COMMUNICATE.html">CONTACT US</a>
+              </div>
+            </div>
+        </div>
+        
+    <h1>AMEYE</h1>
+    <div class="bothpara">
+            <div class="para1" id="slogan">
+               <p>Become a native, wherever you go. </p>
+            </div>
+            <div class="para2" id="email">
+              <p> Be part of a new generation!<br> <a href="https://linktr.ee/ameyesafe">JOIN</a></p>
+            </div>
+            </div>
+            
+          
+
+    </body>
+</html>
